@@ -1,0 +1,65 @@
+{
+  "name": "css-url-relative-plugin",
+  "version": "1.0.0",
+  "description": "webpack plugin to convert url(...) in css to relative path",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard --fix && npm-ensure -t deps",
+    "test": "npm run lint && npm run test-local",
+    "test-local": "mocha test/**/*.test.js",
+    "test-cov": "nyc npm run test-local",
+    "ci": "npm run lint && npm run test-cov",
+    "precommit": "standard && npm-ensure -t deps"
+  },
+  "ensure": {
+    "deps": {
+      "checkDirs": [
+        "lib/**/*",
+        "bin/*"
+      ]
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "json",
+      "lcov"
+    ]
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach"
+    ],
+    "ignore": [
+      "/test"
+    ]
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "parse-import": "^2.0.0",
+    "webpack-sources": "^1.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "husky": "0.x",
+    "mini-css-extract-plugin": "^0.4.0",
+    "mocha": "^3.0.2",
+    "npm-ensure": "^1.0.0",
+    "nyc": "11.x",
+    "standard": "^8.2.0",
+    "webpack": "^4.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yibn2008/css-url-relative-plugin.git"
+  },
+  "keywords": [
+    "css-url-relative-plugin"
+  ],
+  "author": "zoujie.wzj",
+  "license": "MIT"
+}

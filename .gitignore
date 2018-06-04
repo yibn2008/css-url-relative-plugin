@@ -1,0 +1,13 @@
+.*
+**/.DS_Store
+*.log
+!.editorconfig
+!.npmignore
+!.gitignore
+!.build
+!.*.yml
+
+/coverage/
+/node_modules/
+/.idea/
+/test/fixtures/*/dist
