@@ -50,7 +50,7 @@
     "mocha": "^3.0.2",
     "npm-ensure": "^1.0.0",
     "nyc": "11.x",
-    "standard": "^8.2.0",
+    "standard": "11.x",
     "webpack": "^4.10.2"
   },
   "repository": {
