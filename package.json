@@ -1,6 +1,6 @@
 {
   "name": "css-url-relative-plugin",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "webpack plugin to convert url(...) in css to relative path",
   "main": "lib/index.js",
   "scripts": {
