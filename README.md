@@ -48,6 +48,10 @@ module.exports = {
 }
 ```
 
+## Notice
+
+please notice that, this plugin doesn't support SourceMap, if you want this feature, please send me the pull request.
+
 ## Options
 
 ### root
